@@ -14,7 +14,7 @@ public class JpgToPdf {
         String currentPath = new java.io.File(".").getCanonicalPath();
 
         File root = new File(currentPath+"\\src\\main\\java");
-        String outputFile = "output.pdf";
+        String outputFile = "Future Decleration.pdf";
 
         FilenameFilter jpgFilefilter = (dir, name) -> {
             String lowercaseName = name.toLowerCase();
@@ -41,7 +41,5 @@ public class JpgToPdf {
             document.add(image);
         }
         document.close();
-
-
     }
 }
